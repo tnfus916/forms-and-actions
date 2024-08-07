@@ -18,6 +18,8 @@ const formSchema = z.object({
 });
 
 export async function handleForm(prevState: any, formData: FormData) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
   const data = {
     username: formData.get('username'),
     email: formData.get('email'),
