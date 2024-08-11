@@ -25,7 +25,7 @@ export default function Input({ name, errors = [], ...rest }: InputProps & Input
                 </div>
                 <input
                     name={name}
-                    className="bg-transparent focus:outline-none p-2 rounded-md"
+                    className="w-full bg-transparent focus:outline-none p-2 rounded-md"
                     {...rest}
                 />
 
